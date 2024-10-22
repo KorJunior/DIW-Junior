@@ -1,0 +1,43 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+    
+}
+
+tr {
+    text-decoration: overline;
+}
+
+th {
+    background-color: black;
+    color: white;
+    font-style: italic;
+}
+
+
+.ddiw {
+    background-color: #a8d5a2;
+}
+
+.dwees {
+    background-color: #fff6a5;
+}
+
+.dweec {
+    background-color: #f3b381;
+}
+
+.eeie {
+    background-color: #f9d4b3; 
+}
+
+.ddaw {
+    background-color: #f2a7c0;
+}

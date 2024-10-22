@@ -1,0 +1,148 @@
+
+/*
+A partir del código HTML y CSS proporcionados, determinar las reglas CSS necesarias para añadir los siguientes márgenes y rellenos:
+
+1. El elemento #cabecera debe tener un relleno de 1em en todos los lados.
+2. El elemento #menu debe tener un relleno de 0.5em en todos los lados y un margen inferior de 0.5em.
+3. El resto de elementos (#noticias, #publicidad, #principal, #secundario) deben tener 0.5em de relleno en todos sus lados, salvo el elemento #pie, que sólo debe tener relleno en la zona superior e inferior.
+4. Los elementos .articulo deben mostrar una separación entre ellos de 1em.
+5. Las imágenes de los artículos muestran un margen de 0.5em en todos sus lados.
+6. El elemento #publicidad está separado 1em de su elemento superior.
+7. El elemento #pie debe tener un margen superior de 1em.
+*/
+
+ul,
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+h1,
+h2,
+h3,
+p,
+form {
+    margin: 0;
+    padding: 0
+}
+
+.clear {
+    clear: both
+}
+
+img {
+    border: none
+}
+
+#contenedor {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto
+}
+
+#cabecera,
+#menu,
+#lateral,
+#contenido,
+#contenido #principal,
+#contenido #secundario,
+#pie {
+    border: 2px solid #777
+}
+
+#cabecera {
+    clear: both
+}
+
+#menu {
+    clear: both
+}
+
+#lateral {
+    float: left;
+    width: 20%
+}
+
+#contenido {
+    float: right;
+    width: 78%
+}
+
+#contenido #principal {
+    float: left;
+    width: 78%
+}
+
+#contenido #secundario {
+    float: right;
+    width: 20%
+}
+
+#pie {
+    clear: both
+}
+
+#cabecera #logo {
+    float: left
+}
+
+#cabecera #buscador {
+    float: right
+}
+
+#menu ul#menu_principal li {
+    display: inline;
+    float: left
+}
+
+#contenido #principal .articulo img {
+    width: 100px;
+    float: left
+}
+
+#pie .enlaces {
+    float: left
+}
+
+#pie .copyright {
+    float: right
+}
+
+
+/*--------------------------------------------------------------------------*/
+#cabecera {
+    padding: 1em;
+}
+
+#menu {
+   padding: 0.5em;
+   margin-bottom: 0.5em;
+}
+
+
+
+
+#noticias, #publicidad, #principal, #secundario {
+padding: 0.5em;
+}
+
+#pie {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.articulo  + .articulo {
+margin-top: 1em;
+}
+
+.articulo img{
+    margin: 0.5em;
+}
+#publicidad{
+    margin-top: 1em;
+}
+
+#pie{
+    margin-top: 1em;
+}

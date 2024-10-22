@@ -1,0 +1,123 @@
+/*
+A partir del ejercicio anterior resuelto, determinar las reglas CSS necesarias para añadir los siguientes bordes:
+
+1. Eliminar el borde gris que muestran por defecto todos los elementos. 
+2. El elemento #menu debe tener un borde inferior de 1 píxel y azul (#004C99). 
+3. El elemento #noticias muestra un borde de 1 píxel y gris claro (#C5C5C5). 
+4. El elemento #publicidad debe mostrar un borde discontinuo de 1 píxel y de color #CC6600. 
+5. El lateral formado por el elemento #secundario muestra un borde de 1 píxel y de color #CC6600.
+6. El elemento #pie debe mostrar un borde superior y otro inferior de 1 píxel y color gris claro #C5C5C5.
+
+*/
+ul,
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+h1,
+h2,
+h3,
+p,
+form {
+    margin: 0;
+    padding: 0
+}
+
+.clear {
+    clear: both
+}
+
+img {
+    border: none
+}
+
+#contenedor {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto
+}
+
+
+#cabecera {
+    clear: both
+}
+
+#menu {
+    clear: both
+}
+
+#lateral {
+    float: left;
+    width: 20%
+}
+
+#contenido {
+    float: right;
+    width: 78%
+}
+
+#contenido #principal {
+    float: left;
+    width: 78%
+}
+
+#contenido #secundario {
+    float: right;
+    width: 20%
+}
+
+#pie {
+    clear: both
+}
+
+#cabecera #logo {
+    float: left
+}
+
+#cabecera #buscador {
+    float: right
+}
+
+#menu ul#menu_principal li {
+    display: inline;
+    float: left
+}
+
+#contenido #principal .articulo img {
+    width: 100px;
+    float: left
+}
+
+#pie .enlaces {
+    float: left
+}
+
+#pie .copyright {
+    float: right
+}
+
+/*-----------------------------------*/
+#menu {
+    border-bottom: 1px solid #004C99;
+}
+
+#noticias {
+    border: 1px solid #C5C5C5;
+}
+
+#publicidad {
+    border: 1px  #CC6600;
+    border-style: dotted;
+}
+
+#secundario {
+    border: 1px solid #CC6600;
+}
+
+#pie{
+    border-top: 1px solid #C5C5C5;
+    border-bottom: 1px solid #C5C5C5;
+}
+

@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'MyNewFont';
+    src: url('../fuentes/Working.ttf') format('truetype');
+}  
+
+body{
+    margin: 0;
+}
+
+header {
+    height: 20vh;
+    margin: 0;
+    background-color: red;
+}
+
+nav {
+    height: 10vh;
+    margin: 0;
+    background-color: blue;
+}
+
+
+
+section {
+    height: 60vh;
+    margin: 0;
+    background-color: green;
+    width: 80%;
+    float: left;
+}
+
+article {
+    width: 50%;
+    float: left;
+    margin: 0;
+    background-color: blueviolet;
+}
+
+article + article{
+    width: 50%;
+    float: left;
+    margin: 0;
+    background-color: deeppink;
+}
+
+aside {
+    height: 60vh;
+    margin: 0;
+    background-color: brown;
+    width: 20%;
+    float: left;
+}
+
+section, aside {
+    height: 200vh;
+}
+
+footer {
+    height: 10vh;
+    margin: 0;
+    background-color: coral;
+    width: 100%;;
+    clear: both;
+
+}
+
+* {
+    color: white;
+    font-family: 'MyNewFont';
+}
