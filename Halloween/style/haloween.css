@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'haloweenFont';
+    src: url('../font/Scary_Halloween_Font.ttf') format('truetype');
+}
+
+body {
+    margin: 0 auto;
+    background-color: black;
+}
+
+.marcoLateral {
+    position: absolute;
+    font-family: 'haloweenFont';
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
+.marcoIzquierdo {
+    top: 50%;
+    left: 10px;
+    text-align: right;
+    transform-origin: left center;
+}
+
+.marcaDerecho {
+    top: 50%;
+    right: 10px;
+    text-align: left;
+    transform-origin: right center;
+}
+
+
+
+.casaTerror {
+    background-image: url('../img/casa.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    position: relative;
+
+}
+
+.ventanaDesban {
+    position: absolute;
+    top: 232px;
+    left: 144px;
+    width: 37px;
+
+}
+
+.ventanaDesban img {
+    position: absolute;
+    width: 100%;
+
+}
+
+.ventanaDesbanEncendida {
+    opacity: 1;
+}
+
+.ventanaDesbanApagado {
+    opacity: 0;
+}
+
+.ventanaDesbanEncendida:hover {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.ventanaDesbanApagado:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.luna {
+    position: absolute;
+    top: 225px;
+    left: 560px;
+    width: 100px;
+}
+
+.luna img {
+    position: absolute;
+    width: 100%;
+
+}
+
+.lunaNormal {
+    opacity: 1;
+}
+
+.lunaHaloween {
+    opacity: 0;
+}
+
+.luna:hover .lunaNormal {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.luna:hover .lunaHaloween {
+    opacity: 1;
+    transform: rotate(370deg);
+    transition: opacity 0.5s ease, transform 0.5s ease;;
+}
+
+.tumba1 {
+    position: absolute;
+    top: 590px;
+    left: 525px;
+    width: 70px;
+}
+
+.esqueleto1 {
+    position: absolute;
+    opacity: 0;
+    width: 50px;
+    top: 650px;
+    left: 537px;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+
+}
+
+.tumba1:hover+.esqueleto1 {
+    opacity: 1;
+    transform: translateY(-50px);
+}
+
+.tumba2 {
+    position: absolute;
+    top: 590px;
+    right: 490px;
+    width: 70px;
+}
+
+.esqueleto2 {
+    position: absolute;
+    opacity: 0;
+    width: 50px;
+    top: 500px;
+    right: 450px;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+
+.tumba2:hover + .esqueleto2 {
+    opacity: 1;
+    transform: translateY(100px) translateX(-50px);
+}
+
+.ojoIzq {
+    position: absolute;
+    width: 60px;
+    left: 155px;
+    top: 590px;
+    transition: transform 0.5s ease-out, width 0.5s ease-out;
+}
+
+.ojoCentro {
+    position: absolute;
+    width: 60px;
+    left: 270px;
+    top: 630px;
+    transition: transform 0.5s ease-out, width 0.5s ease-out;
+}
+
+.ojoIzq:hover {
+    transform: translateY(-100px) translateX(-50px);
+    width: 100px;
+}
+
+.ojoCentro:hover {
+    transform: translateY(-100px) translateX(50px);
+    width: 100px;
+}
+
+.arbol{
+    position: absolute;
+    width: 450px;
+    top: 85px;
+    right: 62px;
+}
+
+.ojoDerecho{
+    position: absolute;
+    width: 80px;
+    right: 120px;
+    top: 590px;
+    transition: transform 0.5s ease-out, width 0.5s ease-out;
+}
+
+.arbol:hover + .ojoDerecho{
+    width: 60px;
+    transform: translateY(-280px) translateX(-65px);
+}

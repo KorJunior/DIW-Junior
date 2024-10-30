@@ -1,3 +1,10 @@
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
 header{
     margin: 0 auto;
     max-width: 960px;
@@ -6,9 +13,14 @@ header{
 
 }
 
+
+
+
 .wrapper.row1{
     background-color: #333;
 }
+
+
 
 .wrapper.row2{
     padding: 20px;
@@ -20,8 +32,12 @@ h1{
 
 li {
     list-style: none;
-    padding: 1rem 0.5rem;
+    padding: 15px 20px;
     background-color: #232323;
+    font-family: serif;
+    font-size: 12px;
+    justify-content: center;
+    display: flex;
 }
 
 a{
@@ -29,8 +45,31 @@ a{
     color: #a3a3a3;
 }
 
-#container {
+header  nav  li  a{
+    text-transform: uppercase;
+    font-size: 12px;
+}
 
+#header h1 a {
+    font-size: 36px;
+    display: block;
+}
+
+#header h2 {
+    font-family: auto;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #b4b4b4;
+    display: block;
+    margin: 0;
+}
+
+#hgroup{
+    flex-direction: column;
+    display: flex;
+}
+
+#container {
     max-width: 960px;
     margin: 0 auto;
 }
@@ -43,8 +82,47 @@ section{
     display: flex;
 }
 
+
+
+#services{
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.row2 #services .one_third figure img{
+    padding: 0.25rem;
+    border: 1px solid #bdbdbd;
+}
+
+figcaption{
+    width: 290px;
+    color: gray;
+}
+.row2 #services .one_third figcaption .more a {
+    color: orange;
+}
+.more {
+    justify-content: end;
+    display: flex;
+}
+
 figure{
     margin: 0;
+}
+
+.row3 {
+    height: 5rem;
+    background-color: #333333;
+}
+
+.row4 a, .row4 p {
+    color: #b4b4b4;
+}
+
+.row4 {
+    height: 10rem;
+    justify-content: start;
+    padding-left: 1rem;
+    background-color: #232323;
 }
 
 footer{
