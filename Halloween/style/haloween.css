@@ -8,37 +8,13 @@ body {
     background-color: black;
 }
 
-.marcoLateral {
-    position: absolute;
-    font-family: 'haloweenFont';
-    color: red;
-    font-size: 20px;
-    text-align: center;
-}
-
-.marcoIzquierdo {
-    top: 50%;
-    left: 10px;
-    text-align: right;
-    transform-origin: left center;
-}
-
-.marcaDerecho {
-    top: 50%;
-    right: 10px;
-    text-align: left;
-    transform-origin: right center;
-}
-
-
-
 .casaTerror {
     background-image: url('../img/casa.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     margin: 0 auto;
-    width: 80%;
+    width: 1400px;
     height: 100vh;
     position: relative;
 
@@ -47,7 +23,7 @@ body {
 .ventanaDesban {
     position: absolute;
     top: 232px;
-    left: 144px;
+    left: 246px;
     width: 37px;
 
 }
@@ -78,8 +54,8 @@ body {
 
 .luna {
     position: absolute;
-    top: 225px;
-    left: 560px;
+    top: 200px;
+    right: 650px;
     width: 100px;
 }
 
@@ -111,7 +87,7 @@ body {
 .tumba1 {
     position: absolute;
     top: 590px;
-    left: 525px;
+    left: 589px;
     width: 70px;
 }
 
@@ -120,7 +96,7 @@ body {
     opacity: 0;
     width: 50px;
     top: 650px;
-    left: 537px;
+    left: 597px;
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 
 }
@@ -133,7 +109,7 @@ body {
 .tumba2 {
     position: absolute;
     top: 590px;
-    right: 490px;
+    right: 600px;
     width: 70px;
 }
 
@@ -142,7 +118,7 @@ body {
     opacity: 0;
     width: 50px;
     top: 500px;
-    right: 450px;
+    right: 560px;
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
@@ -155,15 +131,15 @@ body {
 .ojoIzq {
     position: absolute;
     width: 60px;
-    left: 155px;
-    top: 590px;
+    left: 258px;
+    top: 592px;
     transition: transform 0.5s ease-out, width 0.5s ease-out;
 }
 
 .ojoCentro {
     position: absolute;
     width: 60px;
-    left: 270px;
+    left: 370px;
     top: 630px;
     transition: transform 0.5s ease-out, width 0.5s ease-out;
 }
@@ -178,22 +154,108 @@ body {
     width: 100px;
 }
 
-.arbol{
+.calabazaCompleta{
+    position: absolute;
+    top: 500px;
+    right: 557px;
+    z-index: 2;
+}
+
+.calabaza{
+    position: absolute;
+    width: 220px;
+
+}
+
+.ojosCala{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-out
+}
+
+.ojoIzCala{
+    position: absolute;
+    width: 80px;
+    top: 47px;
+    left: 20px;
+
+}
+.ojoDerCala{
+    position: absolute;
+    width: 80px;
+    top: 50px;
+    left: 120px;
+
+}
+.sonrisaCala{
+    position: absolute;
+    width: 190px;
+    top: 120px;
+    left: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease-out
+}
+
+
+.calabazaCompleta:hover .sonrisaCala {
+    opacity: 1;
+}
+.calabazaCompleta:hover .ojosCala {
+    opacity: 1;
+}
+
+
+
+
+.arbolTerror{
     position: absolute;
     width: 450px;
     top: 85px;
-    right: 62px;
+    right: 162px;
+    z-index: 0;
 }
 
 .ojoDerecho{
     position: absolute;
     width: 80px;
-    right: 120px;
-    top: 590px;
+    right: 220px;
+    top: 585px;
     transition: transform 0.5s ease-out, width 0.5s ease-out;
 }
 
-.arbol:hover + .ojoDerecho{
+.sonrisaArbol{
+    position: absolute;
+    width: 100px;
+    top: 420px;
+    right: 280px;
+    opacity: 0;
+}
+
+.arbolTerror:hover ~ .ojoDerecho {
     width: 60px;
     transform: translateY(-280px) translateX(-65px);
 }
+.arbolTerror:hover ~ .sonrisaArbol {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.nombreLateral {
+    position: absolute;
+    font-family: 'haloweenFont';
+    color: red;
+    font-size: 24px;
+    writing-mode: vertical-rl;
+    text-align: center;
+}
+
+.izquierda {
+    left: 20px;
+    top: 50%;
+}
+
+.derecha {
+    right: 20px;
+    top: 50%;
+}
+

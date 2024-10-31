@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    
     <div class="casaTerror">
         <div class="ventanaDesban">
             <img class="ventanaDesbanEncendida" src="img/lampara-de-techo.png" alt="">
@@ -27,17 +26,58 @@
         <img class="ojoIzq" src="img/OjoIzquierda.png" alt="">
         <img class="ojoCentro" src="img/Ojo Centro.png" alt="">
 
-        <img class="arbol" src="img/Arbol.png" alt="">
+        <div class="calabazaCompleta">
+            <img class="calabaza" src="img/calabaza.png" alt="">
+            <div class="ojosCala">
+                <img class="ojoIzCala" src="img/ojo_izq_cal.png" alt="">
+            <img class="ojoDerCala" src="img/ojo_der_cal.png" alt="">
+            </div>
+            <img class="sonrisaCala" src="img/sonrisa_cal.png" alt="">
+        </div>
+        <img class="arbolTerror" src="img/Arbol.png" alt="">
         <img class="ojoDerecho" src="img/Ojo derecha.png" alt="">
+        <img class="sonrisaArbol" src="img/sonrisa.png" alt="">
+        <div class="nombreLateral izquierda">Korodjouma Junior</div>
+        <div class="nombreLateral derecha">Fofana Colibaly</div>        
     </div>
-    <div class="marcoLateral marcoIzquierdo">
-        <strong>Korodjouma</strong><br>
-        <strong>Junior</strong>
-    </div>
-    <div class="marcoLateral marcoDerecho">
-        <strong>Fofana</strong><br>
-        <strong>Coulibaly</strong>
-    </div>
+
+    <audio id="backgroundAudio" loop>
+        <source src="sound/musica_de_fondo.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <audio id="lunaAudio">
+        <source src="sound/evil-laugh.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <audio id="macheteAudio">
+        <source src="sound/machete.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script>
+        const backgroundAudio = document.getElementById("backgroundAudio");
+        document.body.addEventListener("mouseover", () => {
+            if (backgroundAudio.paused) {
+                backgroundAudio.play();
+            }
+        });
+
+        const lunaAudio = document.getElementById("lunaAudio");
+        const luna = document.querySelector(".luna");
+        luna.addEventListener("mouseover", () => {
+            lunaAudio.currentTime = 0;
+            lunaAudio.play();
+        });
+
+        const macheteAudio = document.getElementById("macheteAudio");
+        const machete = document.querySelector(".ventanaDesban");
+        machete.addEventListener("mouseover", () => {
+            macheteAudio.currentTime = 0;
+            macheteAudio.play();
+        });
+    </script>
+
 
 </body>
 
