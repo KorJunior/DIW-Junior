@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+
+}
+
+
+#fondo {
+    background-color: aqua;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#suelo {
+    background-color: grey;
+    height: 20%;
+    width: 100%;
+}
+
+#coche img {
+    width: 300px;
+}
+
+#coche {
+    position: absolute;
+    top: 380px;
+    left: 0px;
+    animation-name: mover;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+}
+
+#llammas {
+    position: absolute;
+    top: 140px;
+    left: 150px;
+    opacity: 0;
+    animation-name: aparecerEfectosCoche;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+}
+
+#llammas img {
+    width: 100px;
+}
+
+#humoCoche {
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    opacity: 0;
+    animation-name: aparecerEfectosCoche;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#humoCoche img {
+    width: 70px;
+    ;
+}
+
+
+
+#wall img {
+    width: 300px;
+}
+
+#wall {
+    position: absolute;
+    top: 380px;
+    left: 500px;
+}
+
+#edificio {
+    position: absolute;
+    top: 350px;
+    left: 1150px;
+}
+
+#edificio img {
+    width: 300px;
+}
+
+@keyframes mover {
+    0% {
+        left: 0px;
+    }
+
+    40% {
+        left: 380px;
+    }
+
+    70% {
+        left: 500px;
+    }
+
+
+    90% {
+        left: 700px;
+    }
+
+    100% {
+        left: 890px;
+    }
+}
+
+@keyframes aparecerEfectosCoche {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
