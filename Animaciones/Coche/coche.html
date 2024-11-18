@@ -48,7 +48,17 @@
 
         </div>
         <div id="suelo"></div>
+        
     </div>
+
+    <audio id="pistaVoz" src="audio/malsonante.mp3"></audio>
+
+    <script>
+        setTimeout(() => {
+            const pistaVoz = document.getElementById("pistaVoz");
+            pistaVoz.play();
+        }, 7000);
+    </script>
 </body>
 
 </html>
