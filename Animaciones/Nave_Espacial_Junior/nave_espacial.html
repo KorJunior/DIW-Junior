@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nave Espacial</title>
+    <link rel="stylesheet" href="nave_espacial.css">
+</head>
+
+<body>
+    <div class="naveCompleta">
+        <div class="espacio">
+
+        </div>
+        <div class="contenido">
+            <img class="planeta1" src="img/planeta1.png" alt="">
+            <div class="planeta2_vivo">
+                <img class="planeta2" src="img/planeta2.png" alt="">
+                <img class="estacion_espacial" src="img/estacion_espacial.png" alt="">
+            </div>
+            <img class="ast1" src="img/ast1.png" alt="">
+            <img class="ast2" src="img/ast2.png" alt="">
+            <img class="ast3" src="img/ast3.png" alt="">
+        </div>
+        <div class="contenido2">
+            <img class="naves atacante" src="img/nave1.png" alt="">
+            <img class="naves evasora" src="img/nave2.png" alt="">
+        </div>
+        <div class="cockpit">
+            <div class="palanca">
+                <img class="palanca_base" src="img/palanca/palanca_base.png" alt="">
+                <img class="palanca_desp" src="img/palanca/palanca.png" alt="">
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let enViaje = false;
+    
+        document.querySelector('.palanca_desp').addEventListener('click', function () {
+            const palanca = this;
+            const nave = document.querySelector('.naveCompleta');
+            const contenido = document.querySelector('.contenido');
+            const contenido2 = document.querySelector('.contenido2');
+
+            palanca.classList.add('mover');
+            palanca.addEventListener('animationend', function () {
+                palanca.classList.remove('mover');
+            }, { once: true });
+    
+            if (!enViaje) {
+                nave.classList.add('viaje');
+                setTimeout(() => {
+                    nave.classList.add('espacio2'); 
+                    contenido.style.display = 'none';
+                    contenido2.style.display = 'block';
+                    nave.classList.remove('viaje');
+                }, 1000);
+            } else {
+                
+                nave.classList.add('viaje');
+                setTimeout(() => {
+                    nave.classList.remove('espacio2');
+                    contenido2.style.display = 'none';
+                    contenido.style.display = 'block';
+                    nave.classList.remove('viaje');
+                }, 1000);
+            }
+    
+            enViaje = !enViaje;
+        });
+    </script>
+    
+    
+
+</body>
+
+</html>

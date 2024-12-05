@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+#puntuacion {
+    font-size: 24px;
+
+}
+
+
+.manoJugador1, .manoJugador2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carta {
+    position: relative;
+    width: 150px;
+    height: 224px;
+}
+
+.carta div {
+    transition: all 1s;
+}
+
+.carta .anverso {
+    z-index: 0;
+    transform: rotateY(180deg);
+}
+
+.carta .reverso {
+    z-index: 10;
+    transform: rotateY(180deg);
+}
+
+.carta.seleccionada .anverso {
+    transform: rotateY(0deg);
+    z-index: 10;
+}
+
+.carta.seleccionada .reverso {
+    transform: rotateY(0deg);
+    z-index: 0;
+}
+
+.carta div {
+    width: 150px;
+    height: 224px;
+    background-size: contain;
+    position: absolute;
+}
+
+
+
+.reverso {
+    background-image: url("./img/reverso.png");
+    background-repeat: no-repeat;
+}
+
+.manoJugador1 .carta1 .anverso{
+    background-image: url("./img/busterBladeDeck/buster.png");
+    background-repeat: no-repeat;
+}
+.manoJugador1 .carta2 .anverso{
+    background-image: url("./img/busterBladeDeck/busterBlade.png");
+    background-repeat: no-repeat;
+
+}
+.manoJugador1 .carta3 .anverso{
+    background-image: url("./img/busterBladeDeck/busterDrake.png");
+    background-repeat: no-repeat;
+
+}
+.manoJugador1 .carta4 .anverso{
+    background-image: url("./img/busterBladeDeck/chaosAngel.png");
+    background-repeat: no-repeat;
+}
+
+.manoJugador1 .carta5 .anverso{
+    background-image: url("./img/egiptGod/obelisko.png");
+    background-repeat: no-repeat;
+}
+.manoJugador1 .carta6 .anverso{
+    background-image: url("./img/egiptGod/ra.png");
+    background-repeat: no-repeat;
+
+}
+.manoJugador1 .carta7 .anverso{
+    background-image: url("./img/egiptGod/Slifer.png");
+    background-repeat: no-repeat;
+
+}
+.manoJugador1 .carta8 .anverso{
+    background-image: url("./img/egiptGod/ra_disciple.png");
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+.manoJugador2 .carta1 .anverso{
+    background-image: url("./img/egiptGod/obelisko.png");
+    background-repeat: no-repeat;
+}
+.manoJugador2 .carta2 .anverso{
+    background-image: url("./img/egiptGod/ra.png");
+    background-repeat: no-repeat;
+
+}
+.manoJugador2 .carta3 .anverso{
+    background-image: url("./img/egiptGod/Slifer.png");
+    background-repeat: no-repeat;
+
+}
+.manoJugador2 .carta4 .anverso{
+    background-image: url("./img/egiptGod/ra_disciple.png");
+    background-repeat: no-repeat;
+}
+.manoJugador2 .carta5 .anverso{
+    background-image: url("./img/busterBladeDeck/buster.png");
+    background-repeat: no-repeat;
+}
+.manoJugador2 .carta6 .anverso{
+    background-image: url("./img/busterBladeDeck/busterBlade.png");
+    background-repeat: no-repeat;
+
+}
+.manoJugador2 .carta7 .anverso{
+    background-image: url("./img/busterBladeDeck/busterDrake.png");
+    background-repeat: no-repeat;
+
+}
+.manoJugador2 .carta8 .anverso{
+    background-image: url("./img/busterBladeDeck/chaosAngel.png");
+    background-repeat: no-repeat;
+}

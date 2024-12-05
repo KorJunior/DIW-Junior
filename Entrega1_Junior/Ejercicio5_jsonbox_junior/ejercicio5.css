@@ -1,0 +1,188 @@
+/*
+Crea una página web cuyo contenido sea la estructura básica de HTML5, con el siguiente
+aspecto.
+
+    Se utiliza la regla @media para definir un conjunto de estilos que se aplicarán solo si la
+     condición especificada se cumple. En este caso, la condición es (min-width: 768px), lo que significa
+     que los estilos se aplicarán a pantallas con un ancho mínimo de 768 píxeles.
+
+    Luego, se definen reglas de estilo específicas para las clases .col-1, .col-2, .col-3, etc.
+    Estas clases se utilizan para crear un sistema de columnas en el diseño de la página. En este bloque de
+     media query, se define el ancho de cada columna en porcentajes, lo que permite que las columnas
+      ocupen un cierto porcentaje del ancho total del contenedor. Estos estilos se aplican cuando la pantalla
+       es lo suficientemente ancha (más de 768 píxeles en este caso) para mostrar múltiples columnas en una fila.
+
+    Finalmente, se aplica un estilo específico para las imágenes dentro de elementos con la clase .section.
+    Estos estilos restablecen las transformaciones que se aplicaron en tamaños de pantalla más pequeños,
+     lo que significa que las imágenes se muestran sin escalado ni transformación. La propiedad object-fit: contain;
+      se utiliza para ajustar las imágenes al tamaño del contenedor sin perder su relación de aspecto original.
+*/
+
+
+@font-face {
+    font-family: myFont;
+    src: url(./examples/ud1/ex6/fonts/Chalet.woff);
+}
+
+* {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    background-image: url(./examples/ud1/ex6/img/fondo.jpg);
+    font-family: "myFont", "sans-serif";
+    text-align: center;
+}
+
+.header {
+    background-color: #1E6381;
+}
+
+.header h1 {
+    color: #FF6600;
+}
+
+.contenedorImagen {
+    overflow: hidden;
+}
+
+.section img {
+    width: 100%;
+    transform: scale(2);
+    transform-origin: right bottom;
+}
+
+.aside {
+    background-color: #ccc;
+    display: table-cell;
+    float: right;
+    vertical-align: middle;
+}
+
+.section {
+    background-color: white;
+}
+
+.footer {
+    color: white;
+    background-color: black;
+}
+
+
+/* For mobile phones: */
+
+[class*="col-"] {
+    width: 100%;
+}
+
+
+/* @media only screen and (min-width: 600px) {
+     For tablets: 
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+} */
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    .section img {
+        object-fit: contain;
+        width: 100%;
+        transform: none;
+    }
+}

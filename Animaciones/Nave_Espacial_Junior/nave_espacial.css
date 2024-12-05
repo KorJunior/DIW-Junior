@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.NaveEntera {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.cockpit {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-image: url('img/cabina.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.espacio {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+.contenido {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+.ast1 {
+    position: absolute;
+    width: 60px;
+    top: 220px;
+    left: 60px;
+}
+
+.ast2 {
+    position: absolute;
+    width: 60px;
+    top: 350px;
+    right: 210px;
+}
+
+.ast1,
+.ast2 {
+    animation-name: cruzarPantalla;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.ast3 {
+    position: absolute;
+    width: 60px;
+    top: 20px;
+    right: 200px;
+    animation-name: caerRecto;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+.planeta1 {
+    position: absolute;
+    width: 100px;
+    top: 200px;
+    right: 250px;
+    animation-name: rotarPlaneta, brilloLejano;
+    animation-duration: 40s, 5s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+}
+
+
+.planeta2_vivo {
+    position: relative;
+    top: 0px;
+    left: 200px;
+}
+
+.planeta2 {
+    position: absolute;
+    width: 400px;
+    animation-name: rotarPlaneta;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.estacion_espacial {
+    position: absolute;
+    width: 100px;
+    top: 150px;
+    left: 150px;
+    animation-name: orbitarEstacion;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.cockpit {
+    position: relative;
+}
+
+.palanca {
+    position: absolute;
+    top: 550px;
+    left: 710px;
+}
+
+.palanca img {
+    width: 70px;
+}
+
+.palanca_base {
+    position: absolute;
+    top: 90px;
+}
+
+.palanca_desp {
+    position: absolute;
+    top: -23px;
+    left: -6px;
+    transform-origin: bottom center;
+    transition: filter 0.3s ease;
+
+}
+
+.palanca_desp:hover {
+    filter: brightness(3);
+}
+
+
+
+.palanca_desp.mover {
+    animation-name: inclinar;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.naveCompleta .espacio {
+    background-image: url('img/espaciot1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.naveCompleta.viaje {
+    animation-name: zoom;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+
+.naveCompleta.espacio2 .espacio {
+    background-image: url('img/espacio2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenido2 {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+.naves {
+    position: absolute;
+
+}
+
+.atacante {
+    width: 80px;
+    animation-name: moverseNaves;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    offset-path: path('M0,500 C150,200 350,400 2000,300');
+    animation-fill-mode: forwards;
+}
+
+.evasora {
+    width: 100px;
+    animation-name: moverseNaves;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    offset-path: path('M500,300 C650,200 850,400 2000,400');
+    animation-fill-mode: forwards;
+}
+
+
+
+
+@keyframes inclinar {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        transform: rotateX(-100deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+
+@keyframes rotarPlaneta {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes brilloLejano {
+
+    0%,
+    100% {
+        opacity: 0.9;
+        filter: brightness(1);
+    }
+
+    50% {
+        opacity: 0.7;
+        filter: brightness(2);
+    }
+}
+
+@keyframes orbitarEstacion {
+    0% {
+        transform: rotate(0deg) translateX(-75px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg) translateX(-75px) rotate(360deg);
+    }
+}
+
+@keyframes cruzarPantalla {
+    0% {
+        opacity: 1
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+}
+
+@keyframes caerRecto {
+    100% {
+        transform: translate(-400px, 100vh);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+        filter: blur(0px);
+    }
+
+    50% {
+        transform: scale(1.5);
+        filter: blur(3px);
+    }
+
+    100% {
+        transform: scale(3);
+        filter: blur(7px);
+    }
+}
+
+@keyframes moverseNaves {
+    0% {
+        offset-distance: 0%;
+    }
+
+    100% {
+        offset-distance: 100%;
+    }
+}

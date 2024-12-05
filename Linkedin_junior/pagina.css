@@ -1,0 +1,272 @@
+body {
+    margin: 0% 5%;
+}
+
+.imageSvg {
+    width: 20px;
+}
+
+.linkedin {
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.linkedin img{
+    width: 150px;
+}
+
+.navPrincipal {
+    display: flex;
+    flex-direction: row;
+}
+
+.iconsList {
+    display: flex;
+    flex-direction: row;
+}
+
+.iconosNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 9%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.iconosNav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconosNavLaptop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15%;
+    margin-left: 6%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.iconosNavLaptop a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+}
+
+.navText{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.textLogincontainer{
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    justify-content: center;
+    margin-left: 5%;
+}
+.navTextLogin {
+    display: flex;
+    white-space: nowrap;
+    padding:  15px 20px;
+    border: 2px solid blue;
+    border-radius: 40px; 
+}
+.navTextLogin a {
+    color: blue;
+}
+
+.contenedor {
+    display: flex;
+    margin-top: 10px;
+}
+
+article {
+    width: 65%;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+.fotoPerfil {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    top: -100px;
+    left: 30px;
+}
+
+.fotoPerfil img {
+    width: 175px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 0 5px #1877aa , 0 0 0 10px white;
+}
+
+
+.perfilIcon {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: -160px;
+    left: 88%;
+    width: fit-content;
+}
+
+.bell {
+    width: 40px;
+}
+
+.bell img {
+    max-width: 100%;
+}
+
+.ellipsis {
+    width: 40px;
+    margin-left: 10px;
+}
+
+.ellipsis img {
+    max-width: 100%;
+}
+
+.informacion{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+
+}
+.info_derecha{
+    margin-left: 20%;
+}
+.trabajos img{
+    width: 50px;
+    margin-right: 10px;
+}
+.trabajos{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.datosExtras1{
+    display: flex;
+    flex-direction: row;
+
+}
+.datosExtras1 p{
+    margin: 0;
+    margin-right: 10px;
+}
+
+.botones_inferiores{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.boton_infer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    padding:  15px 20px;
+    border: 2px solid blue;
+    border-radius: 40px; 
+}
+
+.boton_infer.unirse{
+    background-color: blue;
+    color: white;
+}
+
+
+.boton_infer.enviar{
+    margin-left: 5%;
+    background-color: white;
+    color: blue;
+}
+.boton_infer.enviar img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.contact_text {
+    display: flex;
+    align-items: center;
+}
+
+.listaContactos {
+    display: flex;
+    margin-right: 15px;
+}
+
+.listaContactos .face {
+    margin-left: -10px;
+}
+
+.listaContactos img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+aside {
+    margin-left: 5%;
+    width: 25%;
+}
+aside h2{
+    margin: 0;
+}
+.botones_video{
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    white-space: nowrap;
+    padding:  10px 20px;
+    border: 2px solid blue;
+    border-radius: 40px; 
+    background-color: white;
+    color: blue;
+}
+
+.listaVideos{
+    margin-top: 10px;
+    
+}
+
+.listaVideos img{
+    width: 100px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.video{
+    display: flex;
+    flex-direction: row;
+}
+
+.video.debajo{
+margin-top: 5px;
+}
+
