@@ -52,8 +52,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.image-container img{
+    flex-grow: 1; 
+  }
+  
+  .image-container img {
     width: 300px;
-}
+  }
+  .verticalLine{
+    height: 100%;
+  }
+  
+
+
+
+  
+ 
+  
 
