@@ -7,8 +7,15 @@
     font-family: 'PoppinsH1';
     src: url('../resources/fonts/Poppins-Bold.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'PoppinsItalic';
+    src: url('../resources/fonts/Poppins-Italic.ttf') format('truetype');
+    font-style: italic;
+}
 
-h1,h2 {
+h1,
+h2,
+h3 {
     font-family: 'PoppinsH1';
 }
 
@@ -26,7 +33,6 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
-
 }
 
 #myCanvas {
@@ -40,3 +46,14 @@ body {
     width: auto;
     height: auto;
 }
+
+.image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-container img{
+    width: 300px;
+}
+
