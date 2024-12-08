@@ -1,6 +1,23 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../resources/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsH1';
+    src: url('../resources/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+h1,h2 {
+    font-family: 'PoppinsH1';
+}
+
+
+
 body {
     color: #817978;
     background-color: #151312;
+    font-family: 'Poppins';
 }
 
 #myCanvasContainer {
