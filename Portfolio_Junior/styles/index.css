@@ -1,0 +1,18 @@
+body {
+    color: #817978;
+    background-color: #151312;
+}
+
+#myCanvas{
+    width: 100%;
+}
+
+#tags img {
+    max-width: 50px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+}
+
+
+  

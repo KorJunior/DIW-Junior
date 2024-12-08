@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Korodjouma Junior</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="resources/tagcanvas.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    window.onload = function () {
+      var canvas = document.getElementById('myCanvas');
+
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = (canvas.width / 16) * 9;
+      }
+
+      window.addEventListener("resize", resizeCanvas);
+      resizeCanvas();
+
+      try {
+        TagCanvas.Start('myCanvas', 'tags', {
+          reverse: true,
+          depth: 0.8,
+          imageMode: 'image',
+          initial: [0.1, 0.1],
+          noSelect: true,
+          minSpeed: 0.0,
+          maxSpeed: 0.05,
+          wheelZoom: false,
+          zoomMin: 1.0,
+          zoomMax: 1.0,
+        });
+      } catch (e) {
+        document.getElementById('myCanvasContainer').style.display = 'none';
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="styles/index.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- gx y gy son los márgenes entre sus hijos -->
+    <div class="row gx-5 gy-5 my-1">
+      <div class="col-12 col-md-4 offset-md-1 ">
+        <div class="d-flex flex-column bg-white text-dark align-items-center justify-content-center rounded-3">
+          <div class="p-4">
+            <img src="img/foto_personal.png" class="img-fluid rounded mx-auto d-block w-auto" alt="...">
+          </div>
+          <div class="p-2 text-center">Korodjouma Junior Fofana Coulibaly</div>
+          <div class="p-2 text-center">Desarrollador Backend Junior, apasionado por construir soluciones eficientes y
+            escalables.</div>
+          <div class="d-flex justify-content-center my-2">
+            <a href="https://www.instagram.com/juniorf2002/" target="_blank" class="text-black mx-3">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/korodjouma-junior-fofana-coulibaly-858b181a7/" target="_blank"
+              class="text-black mx-3">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:junitof2002@gmail.com" class="text-black mx-3">
+              <i class="bi bi-envelope"></i>
+            </a>
+            <a href="https://github.com/KorJunior" target="_blank" class="text-black mx-3">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12 col-md-5">
+        <div class="p-3 text-center d-block">
+          <h1 class="display-1 fw-bold text-start">
+            <span class="text-white d-block">Backend</span>
+            <span class="text-secondary-emphasis d-block">Developer</span>
+          </h1>
+          <div class="text-justify text-start d-block">
+            <p>Soy un desarrollador de software enfocado en backend, comprometido con crear soluciones tecnológicas
+              eficientes y escalables. Me motiva transformar ideas complejas en aplicaciones funcionales que generen
+              impacto real.
+              Valoro la calidad del código, el aprendizaje continuo y el trabajo colaborativo. Creo firmemente que la
+              tecnología no solo resuelve problemas, sino que también tiene el poder de abrir nuevas oportunidades y
+              simplificar la vida de las personas.</p>
+          </div>
+          <div class="container text-center mt-5">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <h2 class="display-3 text-light">+7</h2>
+                <p class="text-light">MESES DE</p>
+                <p class="text-light">EXPERIENCIA LABORAL</p>
+              </div>
+              <div class="col-12 col-md-4">
+                <h2 class="display-3 text-light">+2</h2>
+                <p class="text-light">PROYECTOS</p>
+                <p class="text-light">COMPLETADOS</p>
+              </div>
+              <div class="col-12 col-md-4">
+                <h2 class="display-3 text-light">100%</h2>
+                <p class="text-light">TRABAJO EN</p>
+                <p class="text-light">EQUIPO Y PROACTIVIDAD</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="myCanvasContainer" class="d-flex justify-content-center w-100 mt-5">
+        <canvas id="myCanvas" class="d-block">
+          <p>Anything in here will be replaced on browsers that support the canvas element</p>
+        </canvas>
+      </div>
+      <div id="tags">
+        <a title="Flutter" href="https://flutter.dev" target="_blank">
+          <img src="img/svg/flutter.svg" alt="Flutter Logo">
+        </a>
+        <a title="Dart" href="https://dart.dev" target="_blank">
+          <img src="img/svg/dart.svg" alt="Dart Logo">
+        </a>
+        <a href="https://github.com" target="_blank">
+          <img src="img/svg/github-dark.svg" alt="GitHub Logo">
+        </a>
+        <a href="https://www.java.com/es/" target="_blank">
+          <img src="img/svg/java.svg" alt="Java Logo">
+        </a>
+        <a href="https://www.python.org" target="_blank">
+          <img src="img/svg/python.svg" alt="Python Logo">
+        </a>
+        <a href="https://www.docker.com" target="_blank">
+          <img src="img/svg/docker.svg" alt="Docker Logo">
+        </a>
+        <a href="https://es.wikipedia.org/wiki/HTML5" target="_blank">
+          <img src="img/svg/html5.svg" alt="HTML Logo">
+        </a>
+        <a href="https://es.wikipedia.org/wiki/CSS" target="_blank">
+          <img src="img/svg/css.svg" alt="CSS Logo">
+        </a>
+        <a href="https://getbootstrap.com" target="_blank">
+          <img src="img/svg/bootstrap.svg" alt="Bootstrap Logo">
+        </a>
+        <a href="https://www.php.net" target="_blank">
+          <img src="img/svg/php_dark.svg" alt="PHP Logo">
+        </a>
+        <a href="https://www.jetbrains.com/idea/" target="_blank">
+          <img src="img/svg/intellijidea.svg" alt="intellijidea Logo">
+        </a>
+        <a href="https://spring.io" target="_blank">
+          <img src="img/svg/spring.svg" alt="Spring Logo">
+        </a>
+      </div>
+
+    </div>
+
+    <h3 class="text-light">Hola mundo</h3>
+  </div>
+</body>
+
+</html>
