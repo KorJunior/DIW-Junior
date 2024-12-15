@@ -24,37 +24,24 @@ h3 {
     font-family: 'Poppins';
 }
 
-.iconSize {
-    font-size: 30px;
-}
-
-
 body {
     color: #817978;
     background-color: #151312;
     font-family: 'Poppins';
 }
 
-.ecosistema{
-    margin-top: 180px;
+.iconSize {
+    font-size: 30px;
 }
 
-#myCanvasContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.image-container img {
+    height: 100px;
+}
+
+.bi {
+    font-size: 20px;
+}
+
+.project-container {
     height: 100%;
-}
-
-#myCanvas {
-    width: 50%;
-    height: auto;
-}
-
-#tags img {
-    max-width: 50px;
-    max-height: 50px;
-    width: auto;
-    height: auto;
 }

@@ -13,32 +13,37 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="resources/tagcanvas.js" type="text/javascript"></script>
   <script src="resources/iniciarCanvas.js"></script>
-
   <link rel="stylesheet" href="styles/index.css">
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </div>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="formacion.html" target="_blank">Formacion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="proyectos.html" target="_blank">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="sobre_mi.html" target="_blank">Sobre mi</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
 
   <div class="container">
-    <!-- gx y gy son los márgenes entre sus hijos -->
     <div class="row gx-5 gy-5 my-1 d-flex">
       <div class="col-12 col-md-4 offset-md-1 d-flex">
         <div class="d-flex flex-column bg-white text-dark align-items-center justify-content-between rounded-3 w-100">
@@ -47,21 +52,30 @@
           </div>
           <div class="p-2 text-center">Korodjouma Junior Fofana Coulibaly</div>
           <div class="p-2 text-center">Desarrollador Backend</div>
-          <div class="d-flex justify-content-center my-2">
-            <a href="https://www.instagram.com/juniorf2002/" target="_blank" class="text-black mx-3">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/korodjouma-junior-fofana-coulibaly-858b181a7/" target="_blank"
-              class="text-black mx-3">
-              <i class="bi bi-linkedin"></i>
-            </a>
-            <a href="mailto:junitof2002@gmail.com" class="text-black mx-3">
-              <i class="bi bi-envelope"></i>
-            </a>
-            <a href="https://github.com/KorJunior" target="_blank" class="text-black mx-3">
-              <i class="bi bi-github"></i>
-            </a>
+          <div class="row justify-content-center my-2">
+            <div class="col-3 d-flex justify-content-center">
+              <a href="https://www.instagram.com/juniorf2002/" target="_blank" class="text-black">
+                <i class="bi bi-instagram iconSize"></i>
+              </a>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <a href="https://www.linkedin.com/in/korodjouma-junior-fofana-coulibaly-858b181a7/" target="_blank"
+                class="text-black">
+                <i class="bi bi-linkedin iconSize"></i>
+              </a>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <a href="mailto:junitof2002@gmail.com" class="text-black">
+                <i class="bi bi-envelope iconSize"></i>
+              </a>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <a href="https://github.com/KorJunior" target="_blank" class="text-black">
+                <i class="bi bi-github iconSize"></i>
+              </a>
+            </div>
           </div>
+
         </div>
       </div>
 
@@ -103,7 +117,7 @@
     </div>
   </div>
   <div class="container">
-    <h3 class="display-5 fw-bold text-center mt-5">
+    <h3 class="display-5 fw-bold text-center ecosistema">
       <span class="text-white d-block">Mi Ecosistema Tecnológico
       </span>
     </h3>
@@ -112,180 +126,96 @@
     </div>
     <div id="tags">
       <a title="Flutter" class="img-fluid" onclick="return false">
-        <img src="img/svg/flutter.svg" alt="Flutter Logo">
+        <img src="img/svg/canva/flutter.svg" alt="Flutter Logo">
       </a>
       <a title="Dart" class="img-fluid" onclick="return false">
-        <img src="img/svg/dart.svg" alt="Dart Logo">
+        <img src="img/svg/canva/dart.svg" alt="Dart Logo">
       </a>
       <a title="GitHub" class="img-fluid" onclick="return false">
-        <img src="img/svg/github-dark.svg" alt="GitHub Logo">
+        <img src="img/svg/canva/github-dark.svg" alt="GitHub Logo">
       </a>
       <a title="Java" class="img-fluid" onclick="return false">
-        <img src="img/svg/java.svg" alt="Java Logo">
+        <img src="img/svg/canva/java.svg" alt="Java Logo">
       </a>
       <a title="Python" class="img-fluid" onclick="return false">
-        <img src="img/svg/python.svg" alt="Python Logo">
+        <img src="img/svg/canva/python.svg" alt="Python Logo">
       </a>
       <a title="Docker" class="img-fluid" onclick="return false">
-        <img src="img/svg/docker.svg" alt="Docker Logo">
+        <img src="img/svg/canva/docker.svg" alt="Docker Logo">
       </a>
       <a title="HTML5" class="img-fluid" onclick="return false">
-        <img src="img/svg/html5.svg" alt="HTML Logo">
+        <img src="img/svg/canva/html5.svg" alt="HTML Logo">
       </a>
       <a title="CSS" class="img-fluid" onclick="return false">
-        <img src="img/svg/css.svg" alt="CSS Logo">
+        <img src="img/svg/canva/css.svg" alt="CSS Logo">
       </a>
       <a title="Bootstrap" class="img-fluid" onclick="return false">
-        <img src="img/svg/bootstrap.svg" alt="Bootstrap Logo">
+        <img src="img/svg/canva/bootstrap.svg" alt="Bootstrap Logo">
       </a>
       <a title="PHP" class="img-fluid" onclick="return false">
-        <img src="img/svg/php_dark.svg" alt="PHP Logo">
+        <img src="img/svg/canva/php_dark.svg" alt="PHP Logo">
       </a>
       <a title="IntelliJ IDEA" class="img-fluid" onclick="return false">
-        <img src="img/svg/intellijidea.svg" alt="IntelliJ IDEA Logo">
+        <img src="img/svg/canva/intellijidea.svg" alt="IntelliJ IDEA Logo">
       </a>
       <a title="Spring" class="img-fluid" onclick="return false">
-        <img src="img/svg/spring.svg" alt="Spring Logo">
+        <img src="img/svg/canva/spring.svg" alt="Spring Logo">
       </a>
       <a title="Jira" class="img-fluid" onclick="return false">
-        <img src="img/svg/jira-1.svg" alt="Jira">
+        <img src="img/svg/canva/jira-1.svg" alt="Jira">
       </a>
       <a title="VsCode" class="img-fluid" onclick="return false">
-        <img src="img/svg/vscode.svg" alt="VsCode">
+        <img src="img/svg/canva/vscode.svg" alt="VsCode">
       </a>
       <a title="Visual Studio" class="img-fluid" onclick="return false">
-        <img src="img/svg/visual-studio.svg" alt="Visual Studio">
+        <img src="img/svg/canva/visual-studio.svg" alt="Visual Studio">
       </a>
       <a title="Visual Studio" class="img-fluid" onclick="return false">
-        <img src="img/svg/visual-studio.svg" alt="Visual Studio">
+        <img src="img/svg/canva/visual-studio.svg" alt="Visual Studio">
       </a>
       <a title="Android" class="img-fluid" onclick="return false">
-        <img src="img/svg/android-icon.svg" alt="Android">
+        <img src="img/svg/canva/android-icon.svg" alt="Android">
       </a>
       <a title="Kotlin" class="img-fluid" onclick="return false">
-        <img src="img/svg/kotlin.svg" alt="Kotlin">
+        <img src="img/svg/canva/kotlin.svg" alt="Kotlin">
       </a>
       <a title="Firebase" class="img-fluid" onclick="return false">
-        <img src="img/svg/firebase.svg" alt="Firebase">
+        <img src="img/svg/canva/firebase.svg" alt="Firebase">
       </a>
       <a title="MogoDB" class="img-fluid" onclick="return false">
-        <img src="img/svg/mongodb.svg" alt="MogoDB">
+        <img src="img/svg/canva/mongodb.svg" alt="MogoDB">
       </a>
       <a title="GitLab" class="img-fluid" onclick="return false">
-        <img src="img/svg/gitlab.svg" alt="GitLab">
+        <img src="img/svg/canva/gitlab.svg" alt="GitLab">
       </a>
       <a title="Git" class="img-fluid" onclick="return false">
-        <img src="img/svg/git.svg" alt="Git">
+        <img src="img/svg/canva/git.svg" alt="Git">
       </a>
       <a title="PostgreSQL" class="img-fluid" onclick="return false">
-        <img src="img/svg/postgresql.svg" alt="PostgreSQL">
+        <img src="img/svg/canva/postgresql.svg" alt="PostgreSQL">
       </a>
       <a title="Postman" class="img-fluid" onclick="return false">
-        <img src="img/svg/postman.svg" alt="Postman">
+        <img src="img/svg/canva/postman.svg" alt="Postman">
       </a>
       <a title="Supabase" class="img-fluid" onclick="return false">
-        <img src="img/svg/supabase.svg" alt="Supabase">
+        <img src="img/svg/canva/supabase.svg" alt="Supabase">
       </a>
     </div>
   </div>
-  <div class="container mt-5">
-    <div class="row gx-5 gy-5">
-      <div class="col-12 col-md-6">
-        <h3 class="text-center mb-4">Experiencia Laboral</h3>
-        <div class="container d-flex align-items-stretch align-items-start">
-          <div class="image-container col-3">
-            <img src="img/bosonit.png" alt="Logo" class="img-fluid">
-            <div class="d-flex verticalLine">
-              <div class="vr"></div>
-            </div>
-          </div>
-          <div class="text-container col-9 ms-3">
-            <h5 class="fw-semibold text-secondary">Bosonit</h5>
-            <p class="fst-italic">Consultor adjunto</p>
-            <p class="text-secondary fst-italic">feb. 2024 - jun. 2024 · 5 meses</p>
-            <p class="text-justify">
-              <strong>Proyecto en Python:</strong> Desarrollo de una página web para traducción de textos y PDFs,
-              implementando algoritmos de procesamiento de texto y APIs de traducción.
-            </p>
-            <p class="text-justify">
-              <strong>Proyectos en Spring Boot:</strong>
-            </p>
-            <ul>
-              <li>
-                <strong>Gestor de Tickets de Autobuses:</strong> Creación de un sistema de gestión de tickets con
-                integración en tiempo real.
-              </li>
-              <li>
-                <strong>Plataforma de Educación:</strong> Mantenimiento y mejora de una plataforma educativa, mejorando
-                la experiencia del usuario.
-              </li>
-            </ul>
 
-          </div>
-        </div>
-        <div class="container d-flex align-items-stretch align-items-start mt-2">
-          <div class="image-container col-3">
-            <img src="img/bosonit.png" alt="Logo" class="img-fluid">
-            <div class="d-flex verticalLine">
-              <div class="vr"></div>
-            </div>
-          </div>
-          <div class="text-container col-9 ms-3">
-            <h5 class="fw-semibold text-secondary">Bosonit</h5>
-            <p class="fst-italic">Consultor adjunto</p>
-            <p class="text-secondary fst-italic">may. 2023 - jun. 2023 · 2 meses</p>
-            <p class="text-justify">
-              Formación en Spring Boot y desarrollo de microservicios.
-              Creación de aplicaciones web y servicios RESTful.
-              Trabajo en equipo con otros consultores en proyectos formativos.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6">
-        <h3 class="text-center mb-4">Educación</h3>
-        <div class="container d-flex align-items-stretch align-items-start">
-          <div class="image-container col-3">
-            <img src="img/iescomercio.png" alt="Logo Educación" class="img-fluid">
-            <div class="d-flex verticalLine">
-              <div class="vr"></div>
-            </div>
-          </div>
-          <div class="text-container col-9 ms-3">
-            <h5 class="fw-semibold text-secondary">IES Comercio</h5>
-            <p class="fst-italic">DUAL Desarrollo de Aplicaciones Web</p>
-            <p class="text-secondary fst-italic">Septiembre 2024 - Actualidad</p>
-            <p class="text-justify">
-              Estoy en camino
-            </p>
-          </div>
-        </div>
-        <div class="container d-flex align-items-stretch align-items-start mt-2">
-          <div class="image-container col-3">
-            <img src="img/iescomercio.png" alt="Logo Educación" class="img-fluid">
-            <div class="d-flex verticalLine">
-              <div class="vr"></div>
-            </div>
-          </div>
-          <div class="text-container col-9 ms-3">
-            <h5 class="fw-semibold text-secondary">IES Comercio</h5>
-            <p class="fst-italic">DUAL Desarrollo de Aplicaciones Multiplataforma</p>
-            <p class="text-secondary fst-italic">Septiembre 2023 - Junio 2024</p>
-            <p class="text-justify">
-              El ciclo formativo de <strong>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</strong>, realizado en
-              modalidad <strong>Dual</strong>, me ha proporcionado una sólida formación en el desarrollo de aplicaciones, bases de datos,
-              programación orientada a objetos y dispositivos móviles. Durante este grado, he trabajado con <em>tecnologías avanzadas</em>
-              en proyectos reales, asegurando la <strong>calidad</strong> y <strong>seguridad</strong> de los sistemas. La modalidad 
-              <strong>Dual</strong> me ha permitido adquirir <strong>experiencia práctica intensiva</strong> en empresas, 
-              lo que ha reforzado los conocimientos adquiridos y favorecido mi aprendizaje en entornos profesionales.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
+        <li class="nav-item"><a href="formacion.html" target="_blank" class="nav-link px-2 text-light">Formacion</a>
+        </li>
+        <li class="nav-item"><a href="proyectos.html" target="_blank" class="nav-link px-2 text-light">Proyectos</a></li>
+        <li class="nav-item"><a href="sobre_mi.html" target="_blank" class="nav-link px-2 text-light">Sobre mi</a></li>
+      </ul>
+      <p class="text-center text-light">Copyright &copy; Korodjouma Junior Fofana Coulibaly 2024 All rights Reserved
+      </p>
+    </footer>
   </div>
-
 
 </body>
 
