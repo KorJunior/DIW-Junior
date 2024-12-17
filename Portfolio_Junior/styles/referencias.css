@@ -30,21 +30,8 @@ body {
     font-family: 'Poppins';
 }
 
-.hobby-container {
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.hobby-container:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0px 15px white;
-}
-
 .bi {
-    font-size: 35px;
-}
-
-.event-container {
-    height: 100%;
+    font-size: 30px;
 }
 
 
