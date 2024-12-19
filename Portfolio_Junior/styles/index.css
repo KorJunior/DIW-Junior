@@ -35,6 +35,21 @@ body {
     font-family: 'Poppins';
 }
 
+.btn{
+    background-color:#2E4058;
+}
+
+.btn:hover{
+    background-color:#2E4058;
+    transform: scale(1.05);
+    transition: transform 1s ease;
+}
+
+.btn:active {
+    background-color: #2E4058 !important;
+}
+
+
 .ecosistema{
     margin-top: 180px;
 }

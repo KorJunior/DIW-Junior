@@ -51,15 +51,16 @@
             <img src="img/foto_personal.png" class="img-fluid rounded mx-auto d-block w-auto" alt="...">
           </div>
           <div class="p-2 text-center">Korodjouma Junior Fofana Coulibaly</div>
-          <div class="p-2 text-center">Desarrollador Backend</div>
+          <button type="button" class="btn my-2" onclick="downloadFile()"><span class="text-light">Descargar CV</span></button>
           <div class="row justify-content-center my-2">
             <div class="col-3 d-flex justify-content-center">
-              <a href="https://www.instagram.com/juniorf2002/" class="text-black">
+              <a href="https://www.instagram.com/juniorf2002/" target="_blank" class="text-black">
                 <i class="bi bi-instagram iconSize"></i>
               </a>
             </div>
             <div class="col-3 d-flex justify-content-center">
-              <a href="https://www.linkedin.com/in/korodjouma-junior-fofana-coulibaly-858b181a7/" class="text-black">
+              <a href="https://www.linkedin.com/in/korodjouma-junior-fofana-coulibaly-858b181a7/" target="_blank"
+                class="text-black">
                 <i class="bi bi-linkedin iconSize"></i>
               </a>
             </div>
@@ -69,7 +70,7 @@
               </a>
             </div>
             <div class="col-3 d-flex justify-content-center">
-              <a href="https://github.com/KorJunior" class="text-black">
+              <a href="https://github.com/KorJunior" target="_blank" class="text-black">
                 <i class="bi bi-github iconSize"></i>
               </a>
             </div>
@@ -216,7 +217,16 @@
       </p>
     </footer>
   </div>
-
+  <script>
+    function downloadFile() {
+      const link = document.createElement('a');
+      link.href = 'resources/CV Junior.pdf';
+      link.download = 'KorodjoumaJuniorFofana_CV.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
 </body>
 
 </html>
