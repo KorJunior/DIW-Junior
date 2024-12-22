@@ -34,4 +34,6 @@ body {
     font-size: 30px;
 }
 
-
+.info-container {
+    height: 100%;
+}
