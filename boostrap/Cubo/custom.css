@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+}
+
+
+.cara {
+    width: 200px;
+    height: 200px;
+    opacity: 0.75;
+    position: absolute;
+    outline: 1px solid black;
+    transition: all 1s;
+    z-index: 1;
+}
+
+.cara>span {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+#c1 {
+    background-color: red;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+}
+
+#c2 {
+    background-color: blue;
+    top: 0px;
+    left: 200px;
+}
+
+#c3 {
+    background-color: green;
+    top: 0px;
+    left: 400px;
+}
+
+#c4 {
+    background-color: yellow;
+    top: 0px;
+    left: 600px;
+}
+
+#c5 {
+    background-color: purple;
+    top: -200px;
+    left: 0px;
+}
+
+#c6 {
+    background-color: brown;
+    top: 200px;
+    left: 600px;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+}
+
+.contenedor {
+    position: relative;
+    top: 200px;
+    left: 1px;
+    perspective: 1000px;
+
+}
+
+main:hover #c4 {
+    transform: rotateY(-90deg);
+    transform-origin: left;
+}
+
+main:hover #c2 {
+    transform: rotateY(90deg);
+    transform-origin: right;
+}
+
+main:hover #c1 {
+    transform: rotateY(180deg) translate3d(-200px, 0px, -200px);
+    transform-origin: right;
+}
+
+main:hover #c6 {
+    transform: rotateZ(90deg) rotateY(-90deg) translate3d(0,100px, 100px);
+    transform-origin: left;
+}
+
+main:hover #c5 {
+    transform: rotateY(180deg) translate3d(-200px, 0px, -200px) rotateX(90deg) translate3d(0,0,-100px);
+    transform-origin: right;
+}
+
+
